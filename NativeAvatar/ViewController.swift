@@ -54,14 +54,7 @@ class ViewController: UIViewController {
     // MARK: - Setup Views
     private func setupNavigation() {
         title = "Avatar"
-        
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.leftBarButtonItems = [
-            .init(
-                title: "Назад",
-                primaryAction: UIAction(handler: { [weak self] _ in self?.navigationController?.popViewController(animated: true) })
-            )
-        ]
     }
     
     private func setupNativeAvatar() {
